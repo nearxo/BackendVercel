@@ -2,6 +2,9 @@ import express from 'express';
 import cors from 'cors';
 import insertarRoute from './api/insertar';
 import consultarRoute from './api/consultar';
+import inventarioRoute from './api/inventario';
+import productosRoute from './api/productos';
+import usuariosRoute from './api/usuarios';
 
 const app = express();
 
@@ -33,6 +36,9 @@ app.use(cors(corsOptions));
 // Rutas
 app.use('/api', insertarRoute);
 app.use('/api', consultarRoute);
+app.use('/api', inventarioRoute);
+app.use('/api', productosRoute);
+app.use('/api', usuariosRoute);
 
 // Exportar la aplicación como un handler para Vercel
 export default app;
