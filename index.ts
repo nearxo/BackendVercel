@@ -14,7 +14,8 @@ app.use(express.json());
 // Configuración de CORS para permitir múltiples orígenes
 const allowedOrigins = [
   'https://probandouno.vercel.app',
-  'https://probandouno-49j1vt991-nears-projects-aad7fd55.vercel.app'
+  'https://probandouno-49j1vt991-nears-projects-aad7fd55.vercel.app',
+  'http://http://localhost:5173'
 ];
 
 const corsOptions = {
