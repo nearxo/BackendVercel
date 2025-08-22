@@ -15,7 +15,8 @@ app.use(express.json());
 const allowedOrigins = [
   'https://probandouno.vercel.app',
   'https://probandouno-49j1vt991-nears-projects-aad7fd55.vercel.app',
-  'http://http://localhost:5173'
+  'http://localhost:5173',
+  '*'
 ];
 
 const corsOptions = {
